@@ -1,11 +1,12 @@
 // src/pages/Home.js
 import React from 'react'
-import HabitList from '../components/HabitList'
+import HomePage from '../components/HomePage'
+
 
 const Home = () => {
   return (
     <div>
-      <HabitList />
+  <HomePage />
     </div>
   )
 }

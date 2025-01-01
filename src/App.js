@@ -9,6 +9,7 @@ import AddHabit from './pages/AddHabit'
 import HabitDetail from './pages/HabitDetail'
 import EditHabit from './pages/EditHabit'
 import PrivateRoute from './utils/PrivateRoute'
+import Habit from './pages/Habit'
 
 function App() {
   return (
@@ -16,16 +17,22 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
+          {/* Home route accessible without login */}
+          <Route path="/" element={<Home />} />
+          
+          {/* Login and Register routes */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          
+          {/* Protected routes */}
           <Route
-            path="/"
+            path="/habit"
             element={
               <PrivateRoute>
-                <Home />
+                <Habit />
               </PrivateRoute>
             }
           />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
           <Route
             path="/add-habit"
             element={

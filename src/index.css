@@ -36,7 +36,7 @@ nav ul li button {
 }
 
 .container {
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 form {
@@ -70,4 +70,243 @@ button {
 
 button:hover {
   background-color: #45a049;
+}
+
+
+/* General Styles */
+
+
+p {
+  margin: 0 0 1rem;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #21bdc6;
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.cta-button {
+  padding: 0.8rem 2.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Section Styling */
+section {
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.intro, .why-habit-tracking {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.features {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.feature-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  background-color: #ffc107;
+  padding: 3rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.cta-button {
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+}
+
+.cta-button:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}
+.intro {
+  padding: 2.5rem;
+  background-color: #f4f8fc;
+  text-align: left;
+  border: 1px solid #dbe4eb;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.intro h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+
+.intro-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.intro-content strong {
+  color: #007bff;
+}
+
+.intro-content em {
+  display: block;
+  margin-top: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+.cta-button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
+.why-habit-tracking {
+  padding: 2.5rem;
+  background-color: #f4f8fc;
+  text-align: left;
+  border: 1px solid #dbe4eb;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.why-habit-tracking h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+
+.why-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.why-content strong {
+  color: #007bff;
+  font-weight: bold;
 }

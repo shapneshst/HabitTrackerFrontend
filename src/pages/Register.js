@@ -18,7 +18,7 @@ const Register = () => {
         password,
       })
       localStorage.setItem('token', res.data.token)
-      navigate('/')
+      navigate('/habit')
     } catch (err) {
       console.error(err)
       alert('Registration Failed')
